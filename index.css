@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+}
+
+#bigbox {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    list-style-type: none;
+}
+
+#sbox1 {
+    width: 50%;
+    text-align: center;
+    background-color: wheat;
+    height: 100%;
+}
+
+#pad {
+    width: 25%;
+}
