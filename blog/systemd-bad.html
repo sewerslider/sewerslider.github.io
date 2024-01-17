@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hv</title>
+         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+         <link rel='stylesheet' type='text/css' href='/style.css'>
+    </head>
+    <body>
+        <div id=box></div>
+        <div id=content>
+        <h1>On systemd (p1)</h1>
+        <p></p>
+        <hr>
+        <p>
+        <h1 id="a-word-about-systemd">A word about systemd</h1>
+        <p>So right now I’m typing this on artix. I have installed
+        artix, and reinstall arch and vice versa ad neauseam but
+        everytime, I just can’t stop thinking about reaping systemd out
+        of my system. Suffice to say, systemd bugged me a lot. There’s
+        things about it always rubs me the wrong way. And that’s why I
+        write this - to try to get the thoughts out and maybe convince
+        some of you to at least consider a systemd-free distro</p>
+        <h2 id="my-way-or-the-highway">My way or the highway</h2>
+        <p>So systemd first started out as an init system. And later on,
+        It tries to replace a lot of the common utilities one would use
+        on a linux desktop (bootloader, Network manager, DNS manager,
+        etc). Now this would be all well and good (I think the GNU
+        coreutils are really good software) except for 1 problems: Tight
+        coupling. Unlike the GNU coreutils, which is basically just a
+        bunch of software that is grouped with each others, systemd
+        programs are hard linked to each others (i.e they can’t work
+        seperately). This leads to another problem, and In my opinion
+        the most problematic part of systemd</p>
+        <h2 id="the-codebase">The codebase</h2>
+        <p>Due to all utilities being mingled together, every systemd
+        component basically become a part of the systemd codebase, thus
+        making it big, complex and fragile. This is made worse by the
+        fact that systemd (and all of its component due to the tight
+        coupling) now run as PID 1, and if any of them have a failure,
+        there’s a chance your system will crash.</p>
+        <p>You know, I find it funny that there’re people who make fun
+        of Xorg because you can perform a DOS on a local Xorg server
+        while unironically defend systemd - a tool that can effectively
+        ddos a machine that happens to use it</p>
+        <p>On an unrelated note, I feel like Redhat had learned nothing
+        from the time they maintain Xorg. They constantly rant about how
+        it is so big and complex while failing to realize that those
+        same words can be used to describe systemd. I think systemd will
+        be the next X11/Xorg: a few years from now, Redhat will realize
+        that they can’t maintain systemd anymore. They will migrate to a
+        new system and anyone who can’t (their customers even) will be
+        met with arrogance when they beg redhat to not drop support for
+        it. Maybe I’m wrong here. Maybe this time they will be able to
+        maintain it. But I have lost faith in them.</p>
+        <p>With all that said, I’m not saying I will never use a systemd
+        distro. I might well use one in the future, on 1 conditions:
+        They have something to justify their choice of init. If they use
+        it, they must have a reason that’s better than “it’s what
+        everyone is using”.</p>
+        <p>Say, I might have been a little negative in this writing. In
+        truth, I don’t hate systemd all that much. I did use it in the
+        past and from that experience, I don’t have too much to hate
+        about it. I think even if I dislike systemd, I would still try
+        it again and dig deeper just to see why everyone use it rather
+        than smaller alternatives like runit or s6</p>
+        </p>
+        <hr>
+        <footer>
+            tag: systemd, tech
+        </footer>
+        </div>
+        <div id=box></div>
+    </body>
+</html>

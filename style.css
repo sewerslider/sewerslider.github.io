@@ -1,0 +1,27 @@
+* {
+    font-family: Verdana, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+body {
+    display: flex;
+}
+
+#box {
+    width: 25%;
+}
+
+#content {
+    width: 50%;
+}
+
+hr {
+    margin: 5% 0;
+}
+
+a {
+    color: purple;
+    font-weight: bold;
+    text-decoration-thickness: 2px;
+}
