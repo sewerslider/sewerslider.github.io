@@ -6,11 +6,6 @@
     line-height: 1.4;
 }
 
-@media screen and (max-width: 600px) {
-    #content {
-        width: 100%;
-    }
-}
 
 body {
     display: flex;
@@ -18,7 +13,7 @@ body {
 }
 
 #content {
-    width: 600px;
+    width: 50%;
     border: 3px solid white;
     padding: 2% 3%;
     height: 100%;
@@ -32,4 +27,10 @@ a {
     color: lightblue;
     font-weight: bold;
     text-decoration-thickness: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+    #content {
+        width: 100%;
+    }
 }
