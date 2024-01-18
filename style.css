@@ -2,18 +2,26 @@
     font-family: Verdana, sans-serif;
     background-color: black;
     color: white;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+@media screen and (max-width: 600px) {
+    #content {
+        width: 100%;
+    }
 }
 
 body {
     display: flex;
-}
-
-#box {
-    width: 25%;
+    justify-content: center;
 }
 
 #content {
-    width: 50%;
+    width: 600px;
+    border: 3px solid white;
+    padding: 2% 3%;
+    height: 100%;
 }
 
 hr {
@@ -21,7 +29,7 @@ hr {
 }
 
 a {
-    color: purple;
+    color: lightblue;
     font-weight: bold;
     text-decoration-thickness: 2px;
 }

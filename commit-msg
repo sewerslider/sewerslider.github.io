@@ -1,0 +1,3 @@
+- remove some useless code
+- change #content's width property (hard-coded for now)
+- fix some indentations
