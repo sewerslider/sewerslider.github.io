@@ -2,7 +2,6 @@
     font-family: Verdana, sans-serif;
     background-color: black;
     color: white;
-    font-size: 16px;
     line-height: 1.4;
 }
 
@@ -19,14 +18,30 @@ body {
     height: 100%;
 }
 
-hr {
-    margin: 5% 0;
+#main-text {
+    margin: 7% 0;
+}
+
+#title {
+    margin: 2% 0;
 }
 
 a {
     color: lightblue;
     font-weight: bold;
     text-decoration-thickness: 2px;
+}
+
+hr {
+    margin: 7% 0;
+}
+
+p {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 3.5rem;
 }
 
 @media only screen and (max-width: 768px) {
