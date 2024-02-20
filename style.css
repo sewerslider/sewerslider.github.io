@@ -1,6 +1,6 @@
 * {
-    font-family: Verdana, sans-serif;
-    background-color: black;
+    background-image: url("bg2.png");
+    background-attachment: fixed;
     color: white;
     line-height: 1.4;
 }
@@ -13,9 +13,6 @@ body {
 
 #content {
     width: 50%;
-    border: 3px solid white;
-    padding: 2% 3%;
-    height: 100%;
 }
 
 #main-text {
@@ -27,17 +24,16 @@ body {
 }
 
 a {
-    color: lightblue;
+    color: #40BCD8;
     font-weight: bold;
-    text-decoration-thickness: 2px;
 }
 
 hr {
-    margin: 7% 0;
+    /*margin: 7% 0;*/
 }
 
 p {
-    font-size: 1rem;
+    /*font-size: 1rem;*/
 }
 
 h1 {
