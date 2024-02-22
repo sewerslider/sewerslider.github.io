@@ -1,18 +1,20 @@
 * {
-    background-image: url("bg2.png");
-    background-attachment: fixed;
     color: white;
     line-height: 1.4;
 }
 
 body {
+    background-image: url("bg2.png");
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
 }
 
 #content {
     width: 50%;
-    background-color: rgb(255, 255, 255 / 70%);
+    padding: 3% 3%;
+    border-radius: 2%;
+    background-color: rgb(0 0 0 / 45%);
 }
 
 #main-text {
